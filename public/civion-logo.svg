@@ -1,0 +1,6 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<rect width="200" height="200" fill="#0F172A"/>
+<path d="M100 30 L130 60 L115 60 L115 130 L85 130 L85 60 L70 60 Z" fill="#177BFF"/>
+<path d="M50 90 A50 50 0 0 1 150 90 L150 150 L130 150 L130 90 A30 30 0 0 0 70 90 L70 150 L50 150 Z" fill="#177BFF"/>
+<text x="100" y="185" text-anchor="middle" font-family="Poppins, sans-serif" font-size="28" fill="#E5E7EB">CIVION</text>
+</svg>
