@@ -15,7 +15,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <header className="sticky top-0 bg-white/90 backdrop-blur border-b border-gray-100 z-50">
           <div className="container py-3 flex items-center gap-4">
             {/* ЛОГОТИП (файл лежит в /public) */}
-            <Image src="/cvonlaw.svg" alt="CIVION" width={40} height={40} priority />
+            <img 
+  src="/civion-logo.svg" 
+  alt="CIVION" 
+  width="40" 
+  height="40" 
+  className="logo-animated"
+/>
+
             <div className="flex flex-col leading-tight">
               <span className="text-xl font-bold tracking-wide text-brand-accent">CIVION</span>
               <span className="text-sm text-brand-mute">Construimos la civilización</span>
