@@ -17,9 +17,10 @@ export default function Home() {
             <a href="/contacto" className="btn btn-ghost">Hablar con CIVION</a>
           </div>
           <div className="mt-8 flex items-center gap-3 text-sm text-brand-mute">
-            <Image src="/cvonlaw.svg" width={20} height={20} alt="CIVION"/>
-            <span>Civilización en construcción</span>
-          </div>
+            <div className="mt-8 flex items-center gap-3 text-sm text-brand-mute">
+  <img src="/civion-logo.svg" alt="CIVION" width={20} height={20} />
+  <span>Civilización en construcción</span>
+</div>
         </div>
 
         <div className="card p-6">
