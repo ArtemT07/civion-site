@@ -1,27 +1,30 @@
-import Link from "next/link";
+// app/page.tsx
+import Image from "next/image";
 
-export default function Page() {
+export default function Home() {
   return (
-    <section className="py-16">
+    <section className="container pt-16 pb-20">
       <div className="grid md:grid-cols-2 gap-10 items-center">
         <div>
-          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
-            Civilización en <span className="text-civionBlue">construcción</span>.
+          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+            Construimos <span className="text-brand-primary">la civilización.</span>
           </h1>
-          <p className="mt-5 text-lg text-metal">
-            Estructuras con propósito. Ingeniería viva. Construimos con precisión y fuerza.
+          <p className="mt-4 text-lg text-brand-mute">
+            Estructuras con propósito. Ingeniería viva. Precisión y fuerza en cada proyecto.
           </p>
-          <div className="mt-8 flex gap-4">
-            <Link href="/calculadora" className="button-primary">Calcular costo</Link>
-            <Link href="/inversionistas" className="px-4 py-2 rounded-md border border-[#242931]">Inversionistas</Link>
+          <div className="mt-8 flex gap-3">
+            <a href="/calculadora" className="btn btn-primary">Calcular costo</a>
+            <a href="/contacto" className="btn btn-ghost">Hablar con CIVION</a>
+          </div>
+          <div className="mt-8 flex items-center gap-3 text-sm text-brand-mute">
+            <Image src="/cvonlaw.svg" width={20} height={20} alt="CIVION"/>
+            <span>Civilización en construcción</span>
           </div>
         </div>
-        <div className="card">
-          <h3 className="font-semibold text-xl mb-3">CIVION Grid</h3>
-          <p className="text-sm text-metal">
-            Geometría y orden. Este componente es un placeholder para futuras visualizaciones.
-          </p>
-          <div className="mt-5 h-48 rounded-lg bg-gradient-to-br from-[#0b1c33] to-[#0b2e5f]" />
+
+        <div className="card p-6">
+          {/* визуальный плейсхолдер — позже заменим на проект/рендер */}
+          <div className="h-64 rounded-xl bg-gradient-to-br from-white to-gray-50 border border-gray-100" />
         </div>
       </div>
     </section>
